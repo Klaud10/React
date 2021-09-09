@@ -1,18 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-//___Funtional components___
+const PrimeraApp = ({ saludo, subtitulo }) => {
 
-const PrimeraApp = () => {
 
-const saludo = 'Hola mundo';
 
     return (
         <>
-            <h1>{ saludo }</h1>
+            <h1>{saludo}</h1>
             {/* <pre> {JSON.stringify(saludo, null, 3)} </pre> */}
-            <p>Mi primera App</p>
+            <p>{subtitulo}</p>
         </>
     );
 }; 
+
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired    
+}
+
+PrimeraApp.defaultProps = {
+    subtitulo: 'Este es el subtitulo'
+}
 
 export default PrimeraApp;
