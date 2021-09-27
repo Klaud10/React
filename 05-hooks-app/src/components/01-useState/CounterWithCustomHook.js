@@ -2,7 +2,7 @@ import React from 'react';
 import { useCounter } from '../../hooks/useCounter';
 import './counter.css';
 
-export const CounterWitthCustomHok = () => {
+export const CounterWithCustomHook = () => {
    
     const { state, increment, decrement, reset } = useCounter(100);
 
