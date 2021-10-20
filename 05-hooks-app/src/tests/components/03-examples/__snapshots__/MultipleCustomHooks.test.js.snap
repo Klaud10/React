@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <MultipleCustomHooks /> should display correctly 1`] = `
+<div>
+  <h1
+    className="text-center"
+  >
+    <span>
+      <b>
+        Br
+      </b>
+      <sup>
+        35
+      </sup>
+    </span>
+    eaking 
+    <br />
+    <span
+      className="ms-5"
+    >
+      <b>
+        Ba
+      </b>
+      <sup>
+        56
+      </sup>
+    </span>
+    d
+  </h1>
+  <hr />
+  <div
+    className="alert alert-info text-center"
+  >
+    Loading...
+  </div>
+  <button
+    className="btn btn-success text-wrap"
+    onClick={[Function]}
+    type="button"
+  >
+    Siguiente frase
+  </button>
+</div>
+`;

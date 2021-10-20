@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { MultipleCustomHooks } from '../03-examples/MultipleCustomHooks'
 
-export const RealExamapleReef = () => {
+export const RealExampleRef = () => {
 
     const [show, setShow] = useState(false);
 
