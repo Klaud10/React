@@ -3,7 +3,7 @@ import React from 'react'
 export const LoginScreen = ({ history }) => {
 
     const handleLogin = (  ) => {
-        history.replace('/')
+        history.replace('/home')
     }; 
 
     return (
