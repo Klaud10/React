@@ -58,7 +58,7 @@ export const SearchScreen = ({ history }) => {
                         (q ==='') && 
                             <div>
                                 <img 
-                                    src={ `../assets/heroes/heroes/comic-wham.png` }
+                                    src={ `../assets/heroes/comic-wham.png` }
                                     className="img-thumbnail animate__animated animate__bounceIn"
                                     alt="Imagen decorativa"
                                 />
@@ -69,7 +69,7 @@ export const SearchScreen = ({ history }) => {
                         (q !=='' && heroesFiltered.length === 0) && 
                             <div className="alert alert-danger mx-3">
                                 <img 
-                                    src={ `../assets/heroes/heroes/comic-boom.png` }
+                                    src={ `../assets/heroes/comic-boom.png` }
                                     className="img-thumbnail animate__animated animate__bounceIn"
                                     alt="Imagen decorativa"
                                 />

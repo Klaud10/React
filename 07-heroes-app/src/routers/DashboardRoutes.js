@@ -9,6 +9,7 @@ import { SearchScreen } from '../components/search/SearchScreen';
 import { LandingPage } from '../components/home/LandingPage'
 
 export const DashboardRoutes = () => {
+
     return (
         <>
             <Navbar />
