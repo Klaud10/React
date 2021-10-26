@@ -3,7 +3,6 @@ import { Link, NavLink, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
 
-
 export const Navbar = () => {
 
     const { user:{name}, dispatch } = useContext(AuthContext);
@@ -19,61 +18,66 @@ export const Navbar = () => {
     }; 
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark px-3">
-            
-            <Link 
-                className="navbar-brand" 
-                to="/"
-            >
-                Home
-            </Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+            <div className="container-fluid">
+                <Link 
+                    className="navbar-brand" 
+                    to="/"
+                >
+                    Home
+                </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/marvel"
-                    >
-                        Marvel
-                    </NavLink>
+                <div className="collapse navbar-collapse">
+                    <div className="navbar-nav">
 
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/dc"
-                    >
-                        DC
-                    </NavLink>
-                    
-                    <NavLink 
-                        activeClassName="active"
-                        className="nav-item nav-link" 
-                        exact
-                        to="/search"
-                    >
-                        Search
-                    </NavLink>
+                        <NavLink 
+                            activeClassName="active"
+                            className="nav-item nav-link" 
+                            exact
+                            to="/marvel"
+                        >
+                            Marvel
+                        </NavLink>
+
+                        <NavLink 
+                            activeClassName="active"
+                            className="nav-item nav-link" 
+                            exact
+                            to="/dc"
+                        >
+                            DC
+                        </NavLink>
+                        
+                        <NavLink 
+                            activeClassName="active"
+                            className="nav-item nav-link" 
+                            exact
+                            to="/search"
+                        >
+                            Search
+                        </NavLink>
+                    </div>
                 </div>
-            </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                <ul className="navbar-nav ml-auto ">
+                <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
+                    <ul className="navbar-nav ml-auto ">
 
-                    <span className="nav-item nav-link text-info">
-                        { name }
-                    </span>
+                        <span className="collapse navbar-collapse nav-item nav-link text-info">
+                            { name }
+                        </span>
 
-                    <button 
-                        className="nav-item nav-link btn"
-                        onClick={ handleLogout } 
-                    >
-                        Logout
-                    </button>
-                </ul>
+                        <button 
+                            className="collapse navbar-collapse nav-item nav-link btn"
+                            onClick={ handleLogout } 
+                        >
+                            Logout
+                        </button>
+                    </ul>
+                </div>
             </div>
         </nav>
     )

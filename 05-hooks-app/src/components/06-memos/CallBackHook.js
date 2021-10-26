@@ -16,7 +16,7 @@ export const CallBackHook = () => {
     }, [ setCounter ]);
 
     useEffect( () => {
-        // ???
+   
     }, [increment])
 
     return (
